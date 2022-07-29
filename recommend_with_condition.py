@@ -41,7 +41,7 @@ def classic_movie(genre):
 	df = df.sort(df.avg_rating.desc(), df.num_of_rating.desc()).drop("low_rated")
 	return df
 
-### Integated
+### Intergrated
 def main(user):
 	movies_to_recom = classic_movie(fav_genre(user))
 	return movies_to_recom
